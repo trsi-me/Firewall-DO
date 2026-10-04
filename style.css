@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Tajawal';
+    src: url('assets/fonts/Tajawal-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal 
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('assets/fonts/Tajawal-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal 
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('assets/fonts/Tajawal-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal 
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('assets/fonts/Tajawal-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal 
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('assets/fonts/Tajawal-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal 
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('assets/fonts/Tajawal-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal 
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('assets/fonts/Tajawal-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal 
+}
+
+* {
+    margin: 0; padding: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center 
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 50rem;
+    padding: 1.25rem 
+}
+
+.logo {
+    font-size: 1.875rem;
+    color: #FFF;
+    margin-bottom: 1.25rem 
+}
+
+.btns { 
+    margin-bottom: 1.25rem 
+}
+
+.start-btn, .stop-btn {
+    padding: 0.625rem;
+    color: #FFF;
+    border: none;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s 
+}
+
+.start-btn { background-color: #8E44AD; } /* بنفسجي */
+.stop-btn { background-color: #FF8C42; } /* برتقالي */
+.start-btn:hover { background-color: #6C3483; } /* بنفسجي أغمق */
+.stop-btn:hover { background-color: #D46A2E; } /* برتقالي أغمق */
+
+
+h2 {
+    font-weight: 700;
+    margin-top: 3.75rem;
+    color: #FFF 
+}
+
+.data-container {
+    height: 18.75rem;
+    overflow-y: auto;
+    border: 0.0625rem solid #FFF;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.625rem;
+    padding: 0.625rem 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.25rem;
+    color: #FFF 
+}
+
+th, td {
+    padding: 0.625rem;
+    text-align: center;
+    color: #FFF 
+}
+
+th { 
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.125rem 
+}
+
+td { 
+    color: #8E44AD 
+}
+
+footer {
+    background-color: #393E46;
+    color: #FFF;
+    padding: 0.625rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0 
+}
+
+@media screen and (max-width: 394px) {
+    .data-container { 
+        width: 90%; max-width: 50rem 
+    }
+
+    footer p { 
+        font-size: 0.625rem 
+    }
+}
+
+@media screen and (min-width: 394px) {
+    .data-container { 
+        width: 90%; max-width: 50rem 
+    }
+
+    footer p { font-size: 14px }
+}
+
+@media screen and (min-width: 767px) { 
+    .data-container { 
+        width: 90%; max-width: 50rem 
+    }
+}
+
+@media screen and (min-width: 1023px) { 
+    .data-container { 
+        width: auto; max-width: max-content 
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .data-container { 
+        width: auto; max-width: max-content 
+    }
+
+    .logo h1 { 
+        font-size: 1.875rem 
+    }
+}
